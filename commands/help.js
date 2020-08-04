@@ -25,7 +25,7 @@ module.exports = {
     commands.forEach(command => {
       if (command.alias) return
       embed.fields.push({
-        name: `**!${command.help.name}**`,
+        name: `**.${command.help.name}**`,
         value: `*Descrição*: ${command.help.description}
         *Categoria*: ${command.help.category}\n`
       })
