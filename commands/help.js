@@ -13,7 +13,7 @@ module.exports = {
       description: '[Clique aqui para ir até o repositório onde estou =)](https://github.com/Liga-dos-Programadores/Project-A)',
       timestamp: new Date(),
       footer: {
-        text: '2020 ®Liga dos Programadores'
+        text: 'Devolper by danny'
       },
       fields: []
     }

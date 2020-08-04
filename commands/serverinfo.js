@@ -30,7 +30,7 @@ module.exports = {
       .addField('**Cargos**', message.guild.roles.size, true)
       .addField('**Criado em**', formatDate('DD/MM/YYYY, às HH:mm:ss', date))
       .addField('**Você entrou em**', formatDate('DD/MM/YYYY, às HH:mm:ss', joined))
-      .setFooter('2020 © Liga dos Programadores.')
+      .setFooter('Devolper by danny')
       .setTimestamp()
 
     // Aqui sera enviado o embed no canal que o usuário executo o comando

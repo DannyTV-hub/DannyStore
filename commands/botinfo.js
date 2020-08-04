@@ -31,7 +31,7 @@ module.exports = {
       .addField('**Usuários**', `${usersize}`, inline)
       .addField('**Estou online a**', moment().to(client.startTime, true))
       .addField('**Criado em**', formatDate('DD/MM/YYYY, às HH:mm:ss', date))
-      .setFooter(`2020 © ${client.user.username}.`)
+      .setFooter(`devolper by danny`)
       .setTimestamp()
 
     if (client.user.presence.status) {
