@@ -9,7 +9,7 @@ client.on("ready", () => {
         let status = [
             { name: 'Desenvolvido por daniel ', type: 'PLAYING' },
             { name: 'Seja bem Vindo(a)!', type: 'PLAYING' },
-            { name: `Players no servidor ${Intl.NumberFormat('pt-BR', {style:'decimal'}).format(`${client.users.size}`)}`, type: 'PLAYING' },
+            { name: `JOGANDO COM ${Intl.NumberFormat('pt-BR', {style:'decimal'}).format(`${client.users.size}`)}`, type: 'PLAYING' },
             { name: 'Meu prefixo .', type: 'PLAYING' },
         ];
     
