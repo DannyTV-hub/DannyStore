@@ -1,0 +1,23 @@
+{
+  "name": "dannybot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts":{
+    "dev": "nodemon bot.js"
+  },
+  "keywords": [],
+  "author": "Nogui",
+  "license": "Nogui © Todos os direitos reservados‎ ",
+  "dependencies": {
+    "discord-youtube-api": "^0.1.0",
+    "discord.js": "^11.6.4",
+    "init": "^0.1.2",
+    "jimp": "^0.6.0",
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "description": ""
+}
