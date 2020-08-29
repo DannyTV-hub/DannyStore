@@ -2,7 +2,7 @@
   "name": "dannybot",
   "version": "1.0.0",
   "main": "bot.js",
-  "scripts":{
+  "scripts": {
     "dev": "nodemon bot.js"
   },
   "keywords": [],
