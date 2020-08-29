@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     .setDescription(`${mensg}`)
     .setColor(c.cor)
     .setTimestamp()
-    .setFooter(`Publicado por: ${message.author.username}`, message.author.avatarURL)
+    .setFooter(`Danny Store`)
         message.channel.send(embed)
 }
 
