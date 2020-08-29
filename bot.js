@@ -7,10 +7,7 @@ client.prefix = config.prefix;
 client.on("ready", () => {
     console.log(`\n-=-=-=-=-=O bot foi iniciado=-=-=-=-=-\nUsuarios: ${client.users.size}\nCanais: ${client.channels.size}\nGrupos: ${client.guilds.size}\n\n-=-=-=-=-= LOGS =-=-=-=-=-`);
         let status = [
-            { name: 'Desenvolvido por daniel ', type: 'PLAYING' },
-            { name: 'Seja bem Vindo(a)!', type: 'PLAYING' },
-            { name: `JOGANDO COM ${Intl.NumberFormat('pt-BR', {style:'decimal'}).format(`${client.users.size}`)}`, type: 'PLAYING' },
-            { name: 'Meu prefixo .', type: 'PLAYING' },
+            { name: 'Danny Store ', type: 'PLAYING' },
         ];
     
         //STREAMING = Transmitindo
