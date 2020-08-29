@@ -7,11 +7,11 @@ module.exports.run = async (client, message, args, prefix) =>{
    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("você não tem permissão! :x:");
    
    const comousar = new Discord.RichEmbed()
-      .setAuthor("Kally", client.user.avatarURL)
+      .setAuthor("Danny BOT", client.user.avatarURL)
       .setTitle(`.limpar`)
       .setDescription(`Irá limpar o número de mensagens escolhido.`)
       .setColor("#22a7cc")
-      .setFooter("© Azza BOT")
+      .setFooter("© Danny BOT")
       .addField("Como usar:", `\`$.limpar <número maior que 2 e menor que 100>\`\n\`${prefix}limpar 57\``)
       .addField("Permissão:", "O staff que for mutar tem que esta em um cargo com a permissão `Gerenciar mensagens`")
 
