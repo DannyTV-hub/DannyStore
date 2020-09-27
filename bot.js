@@ -7,7 +7,7 @@ client.prefix = config.prefix;
 client.on("ready", () => {
     console.log(`\n-=-=-=-=-=O bot foi iniciado=-=-=-=-=-\nUsuarios: ${client.users.size}\nCanais: ${client.channels.size}\nGrupos: ${client.guilds.size}\n\n-=-=-=-=-= LOGS =-=-=-=-=-`);
         let status = [
-            { name: 'Danny Store ', type: 'PLAYING' },
+            { name: 'Among US ', type: 'PLAYING' },
         ];
     
         //STREAMING = Transmitindo

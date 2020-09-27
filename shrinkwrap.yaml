@@ -1,8 +1,10 @@
 dependencies:
   discord-youtube-api: 0.1.0
   discord.js: 11.6.4
+  fs: 0.0.1-security
   init: 0.1.2
   jimp: 0.6.8
+  moment: 2.29.0
   npm-init: 1.3.1
   simple-youtube-api: 5.2.1
   ytdl-core: 2.1.7
@@ -33,7 +35,7 @@ packages:
       mkdirp: 0.5.1
       phin: 2.9.3
       pixelmatch: 4.0.2
-      tinycolor2: 1.4.1
+      tinycolor2: 1.4.2
     dev: false
     resolution:
       integrity: sha512-JOFqBBcSNiDiMZJFr6OJqC6viXj5NVBQISua0eacoYvo4YJtTajOIxC4MqWyUmGrDpRMZBR8QhSsIOwsFrdROA==
@@ -95,7 +97,7 @@ packages:
       '@jimp/custom': 0.6.8
       '@jimp/utils': 0.6.8
       core-js: 2.6.11
-      tinycolor2: 1.4.1
+      tinycolor2: 1.4.2
     dev: false
     id: registry.npmjs.org/@jimp/plugin-color/0.6.8
     peerDependencies:
@@ -302,7 +304,7 @@ packages:
       '@jimp/plugin-rotate': /@jimp/plugin-rotate/0.6.8/f085e900112bc39144ed9b667955e575
       '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.8/0f6270e969d024614f1d1babbfa20b81
       core-js: 2.6.11
-      timm: 1.6.2
+      timm: 1.7.1
     dev: false
     id: registry.npmjs.org/@jimp/plugins/0.6.8
     peerDependencies:
@@ -341,7 +343,7 @@ packages:
       '@jimp/png': /@jimp/png/0.6.8/@jimp!custom@0.6.8
       '@jimp/tiff': /@jimp/tiff/0.6.8/@jimp!custom@0.6.8
       core-js: 2.6.11
-      timm: 1.6.2
+      timm: 1.7.1
     dev: false
     id: registry.npmjs.org/@jimp/types/0.6.8
     peerDependencies:
@@ -443,7 +445,7 @@ packages:
       ansi-align: 3.0.0
       camelcase: 5.3.1
       chalk: 3.0.0
-      cli-boxes: 2.2.0
+      cli-boxes: 2.2.1
       string-width: 4.2.0
       term-size: 2.2.0
       type-fest: 0.8.1
@@ -504,7 +506,7 @@ packages:
   /chalk/3.0.0:
     dependencies:
       ansi-styles: 4.2.1
-      supports-color: 7.1.0
+      supports-color: 7.2.0
     dev: true
     engines:
       node: '>=8'
@@ -530,12 +532,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
-  /cli-boxes/2.2.0:
+  /cli-boxes/2.2.1:
     dev: true
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-gpaBrMAizVEANOpfZp/EEUixTXDyGt7DFzdK5hU+UbWt/J0lB0w20ncZj59Z9a93xHb9u12zF5BS6i9RKbtg4w==
+      integrity: sha512-y4coMcylgSCdVinjiDBuR8PCC2bLjyGTwEmPb9NHR/QaNU6EUOXcTY/s6VjGMD6ENSEaeQYHCY0GNGS5jfMwPw==
   /clone-response/1.0.2:
     dependencies:
       mimic-response: 1.0.1
@@ -560,7 +562,7 @@ packages:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
   /configstore/5.0.1:
     dependencies:
-      dot-prop: 5.2.0
+      dot-prop: 5.3.0
       graceful-fs: 4.2.4
       make-dir: 3.1.0
       unique-string: 2.0.0
@@ -651,14 +653,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
-  /dot-prop/5.2.0:
+  /dot-prop/5.3.0:
     dependencies:
       is-obj: 2.0.0
     dev: true
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
+      integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   /duplexer3/0.1.4:
     dev: true
     resolution:
@@ -701,6 +703,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
+  /fs/0.0.1-security:
+    dev: false
+    resolution:
+      integrity: sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
   /fsevents/2.1.3:
     dev: true
     engines:
@@ -1044,6 +1050,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+  /moment/2.29.0:
+    dev: false
+    resolution:
+      integrity: sha512-z6IJ5HXYiuxvFTI6eiQ9dm77uE0gyy1yXNApVHqTcnIKfY9tIwEjlzsZ6u1LQXvVgKeTnv9Xm7NDvJ7lso3MtA==
   /ms/2.0.0:
     dev: true
     resolution:
@@ -1052,12 +1062,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
-  /node-fetch/2.6.0:
+  /node-fetch/2.6.1:
     dev: false
     engines:
       node: 4.x || >=6.0.0
     resolution:
-      integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
   /nodemon/2.0.4:
     dependencies:
       chokidar: 3.4.2
@@ -1069,7 +1079,7 @@ packages:
       supports-color: 5.5.0
       touch: 3.1.0
       undefsafe: 2.0.3
-      update-notifier: 4.1.0
+      update-notifier: 4.1.1
     dev: true
     engines:
       node: '>=8.10.0'
@@ -1282,7 +1292,7 @@ packages:
   /simple-youtube-api/5.2.1:
     dependencies:
       iso8601-duration: 1.2.0
-      node-fetch: 2.6.0
+      node-fetch: 2.6.1
     dev: false
     resolution:
       integrity: sha512-vmndP9Bkh35tifn2OwY+th2imSsfYtmDqczgdOW5yEARFzvSoR8VSQFsivJnctfV5QHQUL6VrOpNdbmDRLh9Bg==
@@ -1341,28 +1351,28 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /supports-color/7.1.0:
+  /supports-color/7.2.0:
     dependencies:
       has-flag: 4.0.0
     dev: true
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
+      integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   /term-size/2.2.0:
     dev: true
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-a6sumDlzyHVJWb8+YofY4TW112G6p2FCPEAFk+59gIYHv3XHRhm9ltVQ9kli4hNWeQBwSpe8cRN25x0ROunMOw==
-  /timm/1.6.2:
+  /timm/1.7.1:
     dev: false
     resolution:
-      integrity: sha512-IH3DYDL1wMUwmIlVmMrmesw5lZD6N+ZOAFWEyLrtpoL9Bcrs9u7M/vyOnHzDD2SMs4irLkVjqxZbHrXStS/Nmw==
-  /tinycolor2/1.4.1:
+      integrity: sha512-IjZc9KIotudix8bMaBW6QvMuq64BrJWFs1+4V0lXwWGQZwH+LnX87doAYhem4caOEusRP9/g6jVDQmZ8XOk1nw==
+  /tinycolor2/1.4.2:
     dev: false
     resolution:
-      integrity: sha1-9PrTM0R7wLB9TcjpIJ2POaisd+g=
+      integrity: sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
   /to-readable-stream/1.0.0:
     dev: true
     engines:
@@ -1414,7 +1424,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg==
-  /update-notifier/4.1.0:
+  /update-notifier/4.1.1:
     dependencies:
       boxen: 4.2.0
       chalk: 3.0.0
@@ -1433,7 +1443,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-w3doE1qtI0/ZmgeoDoARmI5fjDoT93IfKgEGqm26dGUOh8oNpaSTsGNdYRN/SjOuo10jcJGwkEL3mroKzktkew==
+      integrity: sha512-9y+Kds0+LoLG6yN802wVXoIfxYEwh3FlZwzMwpCZp62S2i1/Jzeqb9Eeeju3NSHccGGasfGlK5/vEHbAifYRDg==
   /url-parse-lax/3.0.0:
     dependencies:
       prepend-http: 2.0.0
@@ -1532,8 +1542,10 @@ shrinkwrapVersion: 3
 specifiers:
   discord-youtube-api: ^0.1.0
   discord.js: ^11.6.4
+  fs: 0.0.1-security
   init: ^0.1.2
   jimp: ^0.6.0
+  moment: ^2.29.0
   nodemon: ^2.0.4
   npm-init: ^1.3.1
   simple-youtube-api: ^5.2.1
